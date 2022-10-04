@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using teste01.Model;
+using GenyusCore.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 

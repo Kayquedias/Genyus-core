@@ -1,4 +1,4 @@
-namespace teste01.Model
+namespace GenyusCore.Model
 {
     public class Client
     {

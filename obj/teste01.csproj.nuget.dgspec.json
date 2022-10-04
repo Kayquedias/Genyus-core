@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/dias/csharp/Webapi/teste01/teste01.csproj": {}
+    "/home/suporte/BackEnd/teste01/GenyusCore/teste01.csproj": {}
   },
   "projects": {
-    "/home/dias/csharp/Webapi/teste01/teste01.csproj": {
+    "/home/suporte/BackEnd/teste01/GenyusCore/teste01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dias/csharp/Webapi/teste01/teste01.csproj",
+        "projectUniqueName": "/home/suporte/BackEnd/teste01/GenyusCore/teste01.csproj",
         "projectName": "teste01",
-        "projectPath": "/home/dias/csharp/Webapi/teste01/teste01.csproj",
-        "packagesPath": "/home/dias/.nuget/packages/",
-        "outputPath": "/home/dias/csharp/Webapi/teste01/obj/",
+        "projectPath": "/home/suporte/BackEnd/teste01/GenyusCore/teste01.csproj",
+        "packagesPath": "/home/suporte/.nuget/packages/",
+        "outputPath": "/home/suporte/BackEnd/teste01/GenyusCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/dias/.nuget/NuGet/NuGet.Config"
+          "/home/suporte/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -67,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.109/sdk/6.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/suporte/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

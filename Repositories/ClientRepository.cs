@@ -1,13 +1,13 @@
-using teste01.Model;
+using GenyusCore.Model;
+using Microsoft.EntityFrameworkCore;
 
-namespace teste01.Repositories
+namespace GenyusCore.Repositories
 {
-  public class ClientRepository : IClientRepository
-  {
+  public class ClientRepository : IClientRepository{
     public readonly ClientContext _context;
 
     public ClientRepository(ClientContext context) {
-        _context = context;
+      _context = context;
     }
 
     public async Task<Client> Create(Client client)
@@ -18,24 +18,27 @@ namespace teste01.Repositories
       return client;
     }
 
-    public Task Delete(int Id)
+    public async Task Delete(int Id)
     {
-      throw new NotImplementedException();
+      var ClientToDelete = await _context.Clients.FindAsync(Id);
+      _context.Clients.Remove(ClientToDelete);
+      await _context.SaveChangesAsync();
     }
 
-    public Task<IEnumerable<Client>> Get()
+    public async Task<IEnumerable<Client>> Get()
     {
-      throw new NotImplementedException();
+      return await _context.Clients.ToListAsync();
     }
 
-    public Task<Client> Get(int Id)
+    public async Task<Client> Get(int Id)
     {
-      throw new NotImplementedException();
+      return await _context.Clients.FindAsync(Id);
     }
 
-    public Task Update(Client client)
+    public async Task Update(Client client)
     {
-      throw new NotImplementedException();
+      _context.Entry(client).State = EntityState.Modified;
+      await _context.SaveChangesAsync();
     }
   }
 }

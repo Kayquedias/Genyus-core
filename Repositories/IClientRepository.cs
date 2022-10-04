@@ -1,6 +1,6 @@
-using teste01.Model;
+using GenyusCore.Model;
 
-namespace teste01.Repositories
+namespace GenyusCore.Repositories
 {
 	public interface IClientRepository
 	{

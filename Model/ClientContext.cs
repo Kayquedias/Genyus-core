@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace teste01.Model
+namespace GenyusCore.Model
 {
 	public class ClientContext : DbContext
 	{
